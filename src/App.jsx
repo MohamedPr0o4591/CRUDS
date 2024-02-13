@@ -373,7 +373,7 @@ function App() {
 
         <div className="data-grid">
 
-          <table className='w-100'>
+          <table >
             <thead >
               <tr >
                 <th >

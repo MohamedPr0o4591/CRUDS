@@ -47,6 +47,17 @@
     letter-spacing: .1rem;
 }
 
+.app .data-grid {
+    width: 100%;
+    overflow: auto;
+    max-height: 500px;
+}
+
+.app .data-grid table {
+    min-width: 1200px;
+    width: 100%;
+}
+
 .app .data-grid th {
     text-transform: uppercase;
 }
@@ -60,4 +71,10 @@
 
 .app .data-grid tbody tr:nth-child(even) {
     background: #403f47;
+}
+
+@media (min-width : 320px) and (max-width : 992px) {
+    .app .details-prices-component {
+        grid-template-columns: 1fr;
+    }
 }

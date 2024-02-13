@@ -12,3 +12,23 @@ a {
   text-decoration: none !important;
 
 }
+
+/* لتغيير لون الشريط ولون الخلفية */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  /* عرض الشريط */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  /* لون الشريط نفسه */
+  border-radius: 6px;
+  /* حواف الشريط */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #242222;
+  /* لون الخلفية */
+}
+
