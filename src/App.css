@@ -1,0 +1,23 @@
+.app {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.app .box-container {
+    height: 85vh;
+    border-radius: .6rem;
+    box-shadow: 0 .1rem .6rem rgba(255, 255, 255, .2);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    overflow: auto;
+    margin: auto;
+}
+
+@media (min-width : 320px) and (max-width : 900px) {
+    .app .box-container {
+        grid-template-columns: 1fr;
+    }
+}
