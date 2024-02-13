@@ -1,23 +1,63 @@
 .app {
-    position: relative;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.app .box-container {
-    height: 85vh;
-    border-radius: .6rem;
-    box-shadow: 0 .1rem .6rem rgba(255, 255, 255, .2);
     padding: 20px;
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-    overflow: auto;
-    margin: auto;
 }
 
-@media (min-width : 320px) and (max-width : 900px) {
-    .app .box-container {
-        grid-template-columns: 1fr;
-    }
+.app h1,
+.app h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app input {
+    background: #252020;
+    padding: 15px 20px;
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+    color: #efefef;
+    transition: all .228s ease;
+}
+
+.app input:focus {
+    transform: scale(1.02, 1.02);
+    letter-spacing: .1rem;
+}
+
+.app .details-prices-component {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+
+.app .details-prices-component .total {
+    border-radius: .4rem;
+    padding: 10px;
+}
+
+.app .details-prices-component .total::before {
+    content: 'Total: ';
+}
+
+.app button {
+    transition: all .228s ease;
+}
+
+.app button:hover {
+    letter-spacing: .1rem;
+}
+
+.app .data-grid th {
+    text-transform: uppercase;
+}
+
+.app .data-grid th,
+.app .data-grid td {
+    border: 1px solid #0e0e0e;
+    padding: 5px;
+    text-align: center;
+}
+
+.app .data-grid tbody tr:nth-child(even) {
+    background: #403f47;
 }

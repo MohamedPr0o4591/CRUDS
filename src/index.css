@@ -1,6 +1,11 @@
 * {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Oswald", sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  background: #35343b;
+  color: #efef;
 }
 
 a {
